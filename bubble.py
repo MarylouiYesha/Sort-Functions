@@ -6,6 +6,9 @@ def bubble_sort(array):
         for j in range (0, num-i-1):
             if array[j] > array[j +1]:
                 swapped = True
-
+                array[j], array[j +1] = array[j+1], array[j]
+        
+        if not swapped:
+            return
 
 array =[17,51,52,31,28,47,50,61,43,65]
