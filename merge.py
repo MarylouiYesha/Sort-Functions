@@ -33,6 +33,7 @@ def printList(array):
     print()
 
 if __name__ == '__main__':
+    print("Array in Ascending Order using Merge Sort")
     array = [17,51,52,31,28,47,50,61,43,65]
     mergeSort(array)
     printList(array)
