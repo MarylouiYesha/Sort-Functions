@@ -6,4 +6,7 @@ def insertion_sort(array):
             j -= 1
 
 
+print("Array in Ascending Order using Insertion Sort")
 array =[17,51,52,31,28,47,50,61,43,65]
+insertion_sort(array)
+print(array)
