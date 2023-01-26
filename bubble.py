@@ -11,8 +11,9 @@ def bubble_sort(array):
             break
     return array
 
-array =[17,51,52,31,28,47,50,61,43,65]
 print("Array in Ascending Order using Bubble Sort")
-print(bubble_sort(array))
+array =[17,51,52,31,28,47,50,61,43,65]
+bubble_sort(array)
+print(array)
 
 
