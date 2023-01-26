@@ -8,4 +8,13 @@ def mergeSort(array):
 
         i = j = k = 0
 
+        while i < len(Left_array) and j < len(Right_array):
+            if Left_array[i] <= Right_array[j]:
+                array[k] = Left_array[i]
+                i += 1
+            else:
+				array[k] = Right_array[j]
+				j += 1
+			k += 1
+
 array = [17,51,52,31,28,47,50,61,43,65]
