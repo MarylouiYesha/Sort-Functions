@@ -1,17 +1,16 @@
+def selection_sort(array,size):
 
-
-def selection_sort(array):
-
-    for i in range(5):
+    for i in range(size):
         min=i
-        for j in range(i, 10):
-            if array[j] < array [min]:
+
+        for j in range(i + 1, size):
+            if array[j] < array[min]:
                 min=j
         
-        temp = array[i]
-        array[i] = array[min]
-        array[min] = temp
+        (array[i], array[min]) = (array[min], array[i])
 
-array ={17,51,52,31,28,47,50,61,43,65}
-selection_sort(array)
+print("Array in Ascending Order")
+array =[17,51,52,31,28,47,50,61,43,65]
+size = len(array)
+selection_sort(array,size)
 print(array)
