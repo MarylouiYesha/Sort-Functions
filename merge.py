@@ -27,5 +27,11 @@ def mergeSort(array):
             j += 1
             k += 1
 
+def printList(array):
+    for i in range(len(array)):
+        print(array[i], end=" ")
+    print()
 
-array = [17,51,52,31,28,47,50,61,43,65]
+if __name__ == '__main__':
+    array = [17,51,52,31,28,47,50,61,43,65]
+    mergeSort(array)
