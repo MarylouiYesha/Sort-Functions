@@ -6,3 +6,8 @@ def selection_sort(array):
         for j in range(i+1, len(array)):
             if array[j] < array [min]:
                 min=j
+        
+        array[i], array[min]=array[min], array[i]
+
+selection_sort(array)
+print(array)
