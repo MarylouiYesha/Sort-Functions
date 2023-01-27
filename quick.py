@@ -13,7 +13,8 @@ def quick_sort (sequence):
             items_greater.append(item)
         else:
             items_lower.append(item)
-
+    
+    return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
 
 
 print("Array in Ascending Order using Quick Sort")
